@@ -4,10 +4,10 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-escw-mcu = "0.1.0"
-# escw-mcu = { path = "../../escw-mcu" }
-escw-mcu-stm32 = { version = "0.1.0", features = ["stm32f4"] }
-# escw-mcu-stm32 = { path = "../../escw-mcu-stm32", features = ["stm32f4"] }
+# escw-mcu = "0.1.0"
+escw-mcu = { path = "../../escw-mcu" }
+# escw-mcu-stm32 = { version = "0.1.0", features = ["stm32f4"] }
+escw-mcu-stm32 = { path = "../../escw-mcu-stm32", features = ["stm32f4"] }
 
 [lib]
 name = "app"
