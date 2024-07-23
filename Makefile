@@ -2,6 +2,8 @@ all: platform
 
 APP_PATH=../target/thumbv7em-none-eabihf/debug/libapp.a
 
+$(APP_PATH):
+
 platform: $(APP_PATH)
 	cargo build --package escw-example
 	make -C escw-example-stm32 APP_PATH=../$(APP_PATH)
